@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thời gian dùng pin boost DC-DC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Tính thời gian dùng pin boost DC-DC</h2>
+        <div class="form-group">
+            <label>Dung lượng pin (mAh):</label>
+            <input type="number" id="capacity" placeholder="VD: 10000">
+        </div>
+        <div class="form-group">
+            <label>Điện áp pin (V):</label>
+            <input type="number" id="voltage_pin" value="3.7">
+        </div>
+        <div class="form-group">
+            <label>Hiệu suất boost (%):</label>
+            <input type="number" id="efficiency" value="85">
+        </div>
+        <div class="form-group">
+            <label>Điện áp tải (V):</label>
+            <input type="number" id="voltage_load" value="12">
+        </div>
+        <div class="form-group">
+            <label>Dòng tải (A):</label>
+            <input type="number" id="current_load" placeholder="VD: 3.25">
+        </div>
+        <button onclick="calculate()">Tính toán</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
